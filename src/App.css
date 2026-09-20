@@ -1,0 +1,489 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 80px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0 30px;
+}
+
+.brand-mark {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #f8fafc;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.96rem;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0 28px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #8b5cf6;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.06em;
+}
+
+.hero-copy p {
+  margin-top: 20px;
+  max-width: 620px;
+  color: #cbd5e1;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn,
+.contact-form button {
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.5rem;
+  text-decoration: none;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: white;
+  box-shadow: 0 14px 30px rgba(124, 58, 237, 0.35);
+}
+
+.secondary-btn {
+  background: rgba(148, 163, 184, 0.12);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.contact-form button:hover {
+  transform: translateY(-1px);
+}
+
+.hero-card {
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 26px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.42);
+}
+
+.mini-panel {
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(15, 118, 110, 0.14);
+  border: 1px solid rgba(45, 212, 191, 0.2);
+  margin-bottom: 16px;
+}
+
+.mini-panel span {
+  display: block;
+  color: #b6c2d6;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.mini-panel strong {
+  font-size: 1.7rem;
+  color: #f8fafc;
+}
+
+.mini-panel.highlight {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.18), rgba(59, 130, 246, 0.12));
+  border-color: rgba(129, 140, 248, 0.4);
+}
+
+.stack-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 0 6px;
+}
+
+.stack-item {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: #dfe7f4;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.section {
+  padding-top: 80px;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: -0.05em;
+}
+
+.service-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.service-card,
+.project-card,
+.contact-card {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.service-card {
+  min-height: 220px;
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  font-size: 1.8rem;
+  border-radius: 18px;
+  background: rgba(124, 58, 237, 0.18);
+}
+
+.service-card h3,
+.project-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+}
+
+.service-card p,
+.project-card p,
+.founder-copy p,
+.contact-copy p {
+  color: #dbe3f0;
+  line-height: 1.75;
+}
+
+.alt-section {
+  background: rgba(15, 23, 42, 0.35);
+  border-radius: 30px;
+  padding: 36px 24px 28px;
+}
+
+.project-card {
+  min-height: 190px;
+}
+
+.project-index {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #93c5fd;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.timeline-step {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 20px;
+  padding: 24px 18px;
+  text-align: center;
+}
+
+.timeline-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.timeline-step p {
+  margin: 0;
+  color: #dbe3f0;
+}
+
+.founder-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-status {
+  margin-top: 4px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.92rem;
+}
+
+.form-status.success {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #bbf7d0;
+}
+
+.form-status.error {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fecaca;
+}
+
+.contact-form input,
+.contact-form textarea,
+.chat-form input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.7);
+  color: #f8fafc;
+  padding: 0.9rem 1rem;
+  font: inherit;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.chat-form input::placeholder {
+  color: #9aa7bd;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button,
+.chat-form button {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  padding: 0.9rem 1.2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 40px;
+  margin-top: 24px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  color: #dbe3f0;
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  color: #e2e8f0;
+  text-decoration: none;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: rgba(30, 41, 59, 0.9);
+  color: white;
+  font-weight: 700;
+}
+
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.quick-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 16px 10px;
+}
+
+.quick-prompt {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  color: #dbeafe;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.chat-message {
+  max-width: 82%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  line-height: 1.5;
+  font-size: 0.92rem;
+}
+
+.chat-message.bot {
+  align-self: flex-start;
+  background: rgba(59, 130, 246, 0.12);
+  color: #e2e8f0;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+}
+
+.chat-form {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px 16px;
+  align-items: center;
+}
+
+.chat-form input {
+  flex: 1;
+}
+
+.voice-btn {
+  min-width: 42px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: #f8fafc;
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .hero-section,
+  .founder-section,
+  .contact-card,
+  .service-grid,
+  .project-grid,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar,
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-shell {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+}
